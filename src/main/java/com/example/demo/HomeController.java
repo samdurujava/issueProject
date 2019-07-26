@@ -26,8 +26,8 @@ public class HomeController {
         return "index";
     }
 
-    @GetMapping("/addproject")
-    public String projectForm(Model model){
+    @RequestMapping("/addproject")
+    public String projectform(Model model){
         model.addAttribute("project", new Project());
         return "projectform";
     }
